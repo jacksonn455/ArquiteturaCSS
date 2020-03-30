@@ -6,21 +6,35 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Fruta & Fruto</title>
-        <link href="./assets/css/normalize.css" rel="stylesheet" />
+        <link href="./assets/css/menu/normalize.css" rel="stylesheet" />
         <link href="./assets/css/reset.css" rel="stylesheet" />
-        <link href="./assets/css/style.css" rel="stylesheet" />
+        <link href="./assets/css/cabecalho.css" rel="stylesheet" />
+        <link href="./assets/css/menu/menu-item.css" rel="stylesheet" /> <!---Atomic design-->
+        <link href="./assets/css/menu/menu-lista.css" rel="stylesheet" />
+        <link href="./assets/css/menu/menu.link.css" rel="stylesheet" />
+        <link href="./assets/css/banner/banner.css" rel="stylesheet" />
+        <link href="./assets/css/banner/banner-imagem.css" rel="stylesheet" />
+        <link href="./assets/css/banner/banner-titulo.css" rel="stylesheet" />
     </head>
     <body>
-        <header>
-            <img src="./assets/img/logo.jpg" alt="Fruta e Fruto"/>
-            <nav>
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Receitas</a></li>
-                    <li><a href="#">Quem somos</a></li>
-                    <li><a href="#">Comunidades</a></li>
+        <header class="cabecalho">
+            <img  class="logo" src="./assets/img/logo.jpg" alt="Fruta e Fruto"/>
+            <nav class="menu">
+                <ul class="menu__lista">
+                    <li class="menu__item"><a class="menu__link ativo" href="#">Inicio</a></li> <!--Elemento filho de menu-->
+                    <li class="menu__item"><a class="menu__link" href="#">Receitas</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Quem somos</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Comunidades</a></li>
                 </ul>
             </nav>
         </header>
+        <section    class="banner">
+            <img class="banner__imagem" src="./assets/img/banner.jpg"/>
+            <h2 class="banner__titulo">Reaproveite melhor os alimentos!</h2>
+        </section>
+        <section class="sobre">
+            <h2 class="sobre__titulo">Receitas para economisar e ganhar saúde</h2>
+            <p class="sobre__descricao">Nossas receitas ajudam você a aproveitar melhor os alimentos, economisar, ganhar tempo e praticidade</p>
+        </section>
     </body>
 </html>
